@@ -21,10 +21,13 @@ body{
   font-size: 1.5rem;
   font-weight: 400;
   overflow-x: hidden;
+
   background-color: #fff;
   line-height: 1.5;
 }
 html {
+  overflow-x: hidden;
+  overflow-y: hidden;
   font-size: 69.5%;
 }
 
@@ -216,6 +219,10 @@ div.femenino .componentFilter ul li.ative {
   border-bottom: 1px solid #000;
 }
 
+.home .row .col-6 .division .bg1 {
+  display: none;
+} 
+
 div.femenino .row .col {
   margin-bottom: 0.625rem;
  
@@ -367,8 +374,12 @@ div.increver .row .col-6 form button {
     width: 100%;
   }
   .home .row .col-6 .division .bg, .home .row .col-6 .division .bg1 {
+    display: flex;
     width: 50%;
   }
+
+
+
   .row-cols-4 > * {
     width: 50%;
   }
