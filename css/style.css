@@ -26,8 +26,7 @@ body{
   line-height: 1.5;
 }
 html {
-  overflow-x: hidden;
-  overflow-y: hidden;
+  
   font-size: 69.5%;
 }
 
@@ -177,7 +176,8 @@ input, button {
 
 }
 
-.home .row .col-6 .bg1 h1{
+.home .row .col-6 .bg1 h1{overflow-x: hidden;
+  overflow-y: hidden;
   color: #000;
   opacity: .85;
   font-size: 30rem;
@@ -319,6 +319,10 @@ div.increver .row .col-6 form button {
 }
 /* INSCRIÇÃO END */
 
+#carouselExampleControls .carousel-inner {
+  height: 500px;
+  width: 500px;
+}
 
 
 /* // No media query for `xs` since this is the default in Bootstrap */
