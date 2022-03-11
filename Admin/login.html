@@ -19,12 +19,10 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>Hadja</b>Model</a>
+      <a href="#" class="h1">Logan</a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Fazer Logan</p>
-
-      <form  id="quickForm">
+      <form action="./index.html" id="quickForm" method="post">
         <div class="input-group mb-3">
           <input type="email" name="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
@@ -44,14 +42,14 @@
         <div class="row">
           
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block ">Entrar</button>
           </div>
         </div>
       </form>
 
       
-      <p class="mb-1">
-        <a href="forgot-password.html">I forgot my password</a>
+      <p class="mb-2 mt-2">
+        <a href="forgot-password.html">Recuperar as sua senha</a>
       </p>
      
     </div>
@@ -67,7 +65,6 @@
   $(function () {
     $.validator.setDefaults({
       submitHandler: function (e) {
-        alert( "Sucessio" );
         e.submit();
       }
     });
