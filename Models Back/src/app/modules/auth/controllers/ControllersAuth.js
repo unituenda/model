@@ -23,10 +23,12 @@ class ControllersAuth {
 
     if(!user){
       // req.flash('error', 'Invalid email or password !');
+      request.flash('error', 'Invalid email or password !');
       return response.redirect('/signin');
     }
 
     if (!(await user.checkPassword(password))) {
+      request.flash('error', 'Email ou palavra-pase !');
       return response.redirect('/signin');
     }
 
