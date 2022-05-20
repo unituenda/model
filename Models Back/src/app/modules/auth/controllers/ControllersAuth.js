@@ -34,7 +34,12 @@ class ControllersAuth {
 
     request.session.data = { isLoggedIn : true};
     return response.redirect('/admin');
+  }
 
+  delete(req, res) {
+    req.session.destroy(() => {
+      return res.redirect('/signin');
+    });
   }
 }
 

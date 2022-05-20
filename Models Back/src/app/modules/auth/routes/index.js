@@ -13,4 +13,6 @@ router.post('/signup', controllersAuth.store);
 
 router.get('/signin', controllersAuthRender.getAdminSignin);
 router.post('/signin', controllersAuth.index);
+
+router.get('/logout', controllersAuth.delete);
 export default router;
