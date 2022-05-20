@@ -28,7 +28,7 @@ class ControllersAuth {
     }
 
     if (!(await user.checkPassword(password))) {
-      request.flash('error', 'Email ou palavra-pase !');
+      request.flash('error', { type : 'error' , message : 'Email ou senha errada '});
       return response.redirect('/signin');
     }
 
