@@ -23,7 +23,7 @@ module.exports = {
         allowNull: false,
       }
       ,
-      nevilSession: {
+      nevil_session: {
         type: Sequelize.INTEGER,
         allowNull: true,
       },

@@ -1,9 +1,18 @@
+import User from '../../users/models/users';
 class ControllersAuthRender {
-  getAdminSignup(request, response) {
-    response.render('dashboard/cadastrar');
+  async getAdminSignup(request, response) {
+    const exitUSer = await User.findAll();
+    if(!!exitUSer[0]){
+      return response.redirect('/signin');
+    }
+    return response.render('dashboard/cadastrar');
   }
-  getAdminSignin(request, response) {
-    response.render('dashboard/login');
+  async getAdminSignin(request, response) {
+    const exitUSer = await User.findAll();
+    if(!exitUSer[0]){
+      return response.redirect('/signup');
+    }
+    return response.render('dashboard/login');
   }
 }
 
