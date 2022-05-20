@@ -1,6 +1,6 @@
 // arquivo responsavel por carregar todos os models e fazer a conexao com a base dedados
 import Sequelize from 'sequelize';
-import User from '../app/models/users';
+import User from '../app/modules/users/models/users';
 
 import databaseConfig from '../config/database';
 
@@ -8,7 +8,7 @@ const models = [User];
 
 class Database {
   constructor() {
-    this.init();hajdamodel
+    this.init();
   }
 
   init() {
