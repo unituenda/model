@@ -12,3 +12,5 @@ class CreateUsers {
     return user;
   }
 }
+
+export default CreateUsers;

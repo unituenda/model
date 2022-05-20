@@ -1,9 +1,8 @@
+import User from '../modules/users/routes'
 import { Router } from 'express';
 
 const router = Router();
 
-router.get('/', (request, response) => {
-    response.render('dashboard/cadastrar');
-});
+router.use(User);
 
 export default router;
