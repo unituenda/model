@@ -1,14 +1,23 @@
 import './database';
+import flash from 'connect-flash';
 import express, { urlencoded } from 'express';
 import { join } from 'path';
+import cookieParser from 'cookie-parser';
+
+import session from './config/sessions';
 import router from './app/routes';  
 
 const app = express();
 
+app.use(cookieParser());
+app.use(session);
 app.set('view engine', 'ejs');
 app.set('views', join(__dirname, 'app', 'views'));
 app.use(express.static(join(__dirname, 'app', 'views', 'public')));
 app.use(urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(session);
+app.use(flash());
 app.use(router);
 
 // app.use((err, request,  response, _) => {

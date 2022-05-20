@@ -3,7 +3,7 @@ const SessionStore = require('express-session-sequelize')(expressSession.Store);
 
 import Sequelize from 'sequelize';
 
-const myDatabase = new Sequelize('ctlls', 'postgres', 'docker', {
+const myDatabase = new Sequelize('hajdamodel', 'postgres', 'docker', {
 	host: 'localhost',
 	dialect: 'postgres',
 });
