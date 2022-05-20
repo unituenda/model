@@ -32,10 +32,8 @@ class ControllersAuth {
       return response.redirect('/signin');
     }
 
-
-    // const doMatch = await compare(password, emailExist.password);
-
-    return response.send('Dashboard');
+    request.session.data = { isLoggedIn : true};
+    return response.redirect('/admin');
 
   }
 }
