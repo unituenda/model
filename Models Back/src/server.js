@@ -7,7 +7,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', join(__dirname, 'app', 'views'));
-app.use(express.static(join(__dirname, 'app', 'public')));
+app.use(express.static(join(__dirname, 'app', 'views', 'public')));
 app.use(urlencoded({ extended: false }));
 app.use(router);
 
