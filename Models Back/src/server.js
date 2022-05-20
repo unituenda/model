@@ -1,3 +1,4 @@
+import './database';
 import express, { urlencoded } from 'express';
 import { join } from 'path';
 import router from './app/routes';  

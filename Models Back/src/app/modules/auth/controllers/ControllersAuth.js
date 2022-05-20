@@ -3,13 +3,14 @@ import CreateUSer from '../../users/services/CreateUserServices';
 class ControllersAuth {
   async store(request, response) {
     const { name, email, password } = request.body;
-    const createUSer = new CreateUSer({ 
+    
+    const createUSer = new CreateUSer();
+    await createUSer.execute({ 
       name, 
       email, 
       password 
     });
-    await createUSer.execute();
-    response.redirect('/');
+    response.redirect('/signup');
   }
 }
 
