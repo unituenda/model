@@ -1,11 +1,12 @@
 import express, { urlencoded } from 'express';
 import { join } from 'path';
-import router from './APP/routes/router.public';  
+import router from './app/routes';  
 
 const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', join(__dirname, 'app', 'views'));
+app.use(express.static(join(__dirname, 'app', 'public')));
 app.use(urlencoded({ extended: false }));
 app.use(router);
 
