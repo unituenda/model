@@ -11,7 +11,6 @@ const router = Router();
 router.get('/signup', controllersAuthRender.getAdminSignup);
 router.post('/signup', controllersAuth.store);
 
-router.sign('/signin', controllersAuthRender.getAdminSignin);
-
+router.get('/signin', controllersAuthRender.getAdminSignin);
 
 export default router;

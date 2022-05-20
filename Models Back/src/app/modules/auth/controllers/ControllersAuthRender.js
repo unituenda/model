@@ -1,8 +1,8 @@
 class ControllersAuthRender {
-  getAdminSignup = (request, response) => {
+  getAdminSignup(request, response) {
     response.render('dashboard/cadastrar');
   }
-  getAdminSignin = (request, response) => {
+  getAdminSignin(request, response) {
     response.render('dashboard/login');
   }
 }
