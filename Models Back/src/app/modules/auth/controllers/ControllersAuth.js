@@ -22,8 +22,7 @@ class ControllersAuth {
     });
 
     if(!user){
-      // req.flash('error', 'Invalid email or password !');
-      request.flash('error', 'Invalid email or password !');
+      request.flash('error', { type : 'error' , message : 'Email ou senha errada '});
       return response.redirect('/signin');
     }
 
@@ -34,7 +33,7 @@ class ControllersAuth {
 
     request.session.data = { isLoggedIn : true, user_id : user.id };
 
-    console.log(request.session.data);
+    request.flash('error', { type : 'success' , message : 'Logado com sucesso !'});
     return response.redirect('/admin');
   }
 
