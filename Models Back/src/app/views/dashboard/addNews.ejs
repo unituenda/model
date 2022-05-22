@@ -277,7 +277,23 @@
               <div class="input-group-append">
                 <span class="input-group-text">Upload</span>
               </div>
+              
             </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card-body">
+                <textarea id="summernote">
+                  <b>Hamilton Su</b>
+                </textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+             <button type="button" class="btn btn-block btn-dark btn-flat">Enviar</button>
+            </div>
+          
           </div>
           </div>
          
@@ -316,6 +332,8 @@
 <script src="/dist/js/adminlte.min.js"></script>
 <script>
   $(function () {
+    $('#summernote').summernote()
+
     bsCustomFileInput.init();
   });
   </script>
