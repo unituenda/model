@@ -6,7 +6,7 @@ import ControllersRender from '../controllers/ControllersRender';
 import ControllerNews from '../controllers/ControllersNews';
 
 const router = Router();
-const upload = multer(multerConfig);
+const upload = multer({ storage : multerConfig.storage});
 const controllersRender = new ControllersRender();
 const controllerNews = new ControllerNews();
 

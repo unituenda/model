@@ -1,16 +1,19 @@
+import { randomBytes } from 'crypto';
+import { resolve } from 'path';
 import multer from 'multer';
-import crypto from 'crypto';
-import { extname, resolve } from 'path';
 
+const tmpFolfer = resolve(__dirname, '..', '..', 'tmp');
+
+console
 export default {
+  directory: tmpFolfer,
   storage: multer.diskStorage({
-    destination: resolve(__dirname, '..', '..', 'tmp', 'uploads'),
-    filename: (req, file, cb) => {
-      crypto.randomBytes(16, (err, res) => {
-        if (err) return cb(err);
-      
-        return cb(null, res.toString('hex') + extname(file.originalname));
-      });
+    destination: tmpFolfer,
+    filename(request, file, callback) {
+      const fileHash = randomBytes(10).toString('hex');
+      const fileName = `${fileHash}-${file.originalname}`;
+
+      return callback(null, fileName);
     },
   }),
 };

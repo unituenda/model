@@ -14,7 +14,7 @@ class ControllersAuthRender {
       return response.redirect('/signup');
     }
    const error = request.flash('error');
-   console.log(error);
+
     return response.render('dashboard/login', {
       error
     });

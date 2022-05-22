@@ -247,20 +247,20 @@
           <div class="row m-2">
           </div>
         </div><!-- /.row -->
-        <form>
+        <form action="/admin/news" method="post" enctype="multipart/form-data" >
           <div class=" mr-2 ml-2 mt-4">
             <div class="row "> 
              <div class="col-sm-6">
                <!-- text input -->
                <div class="form-group">
                  <label>Title</label>
-                 <input type="text" class="form-control" placeholder="Titlo da noticia">
+                 <input type="text" name="title" class="form-control" placeholder="Titlo da noticia">
                </div>
              </div>
              <div class="col-sm-6">
                <div class="form-group">
                  <label>Categoria</label>
-                 <select class="form-control select2" style="width: 100%;">
+                 <select class="form-control select2" name="category" style="width: 100%;">
                    <option selected="selected">Intertimento</option>
                    <option>Moda</option>
                    <option>Eventos</option>
@@ -271,7 +271,7 @@
            <div class="row">
             <div class="input-group col-sm-12">
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="exampleInputFile">
+                <input type="file" class="custom-file-input" id="exampleInputFile" name="file">
                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>
               </div>
               <div class="input-group-append">
@@ -283,7 +283,7 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="card-body">
-                <textarea id="summernote">
+                <textarea id="summernote" name="content">
                   <b>Hamilton Su</b>
                 </textarea>
               </div>
@@ -291,7 +291,7 @@
           </div>
           <div class="row">
             <div class="col-sm-4">
-             <button type="button" class="btn btn-block btn-dark btn-flat">Enviar</button>
+             <button type="submit" class="btn btn-block btn-dark btn-flat">Enviar</button>
             </div>
           
           </div>

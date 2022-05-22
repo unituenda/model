@@ -32,7 +32,9 @@ class ControllersAuth {
       return response.redirect('/signin');
     }
 
-    request.session.data = { isLoggedIn : true};
+    request.session.data = { isLoggedIn : true, user_id : user.id };
+
+    console.log(request.session.data);
     return response.redirect('/admin');
   }
 

@@ -12,3 +12,5 @@ class CreateNews {
     return news;
   }
 }
+
+export default CreateNews;
