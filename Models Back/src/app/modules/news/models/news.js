@@ -6,10 +6,9 @@ class News extends Model {
     super.init(
       {
         title: Sequelize.STRING,
-        content: Sequelize.STRING,
+        content: Sequelize.TEXT,
         photo_path: Sequelize.STRING,
-        user_id: Sequelize.INTEGER,
-        views: Sequelize.TEXT,
+        views: Sequelize.INTEGER,
       },
       {
         sequelize,
@@ -20,7 +19,7 @@ class News extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.User, { foreignKey: 'user_id', as: 'actor' });
+    this.belongsTo(models.User, { foreignKey: 'user_id' });
   }
 }
 
