@@ -3,7 +3,8 @@ class ControllersRender {
     const error = request.flash('error');
 
     return response.render('dashboard/index.ejs', {
-      error
+      error,
+      modeMenu: 'dashboard'
     });
   }
  
