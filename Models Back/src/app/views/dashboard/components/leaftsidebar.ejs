@@ -32,7 +32,7 @@
           </a>
         </li>
         
-        <li class="nav-item menu-open">
+        <li class="nav-item <%- modeMenu.split('/')[0] == 'news' ? 'menu-open' : '' %>">
           <a href="#" class="nav-link">
             <span class="nav-icon fas fa-newspaper"></span>
             <p>
@@ -42,7 +42,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="pages/layout/top-nav.html" class="nav-link active">
+              <a href="pages/layout/top-nav.html" class="nav-link <%- modeMenu.split('/')[1] == 'add' ? 'active' : '' %>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Escrever</p>
               </a>
