@@ -10,7 +10,9 @@ const upload = multer({ storage : multerConfig.storage});
 const controllersRender = new ControllersRender();
 const controllerNews = new ControllerNews();
 
-router.get('/news', controllersRender.getAddNews);
-router.post('/news', upload.single('file'), controllerNews.store);
+router.get('/add', controllersRender.getAddNews);
+router.post('/add', upload.single('file'), controllerNews.store);
+
+router.get('/list', controllersRender.getListNews);
 
 export default router;

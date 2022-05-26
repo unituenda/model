@@ -13,7 +13,7 @@ class ControllersNews {
       user_id: request.session.data.user_id
     });
 
-    response.redirect('/admin/news');
+    response.redirect('/admin/news/add');
 
   }
 }

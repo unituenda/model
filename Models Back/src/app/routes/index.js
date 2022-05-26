@@ -8,6 +8,6 @@ const router = Router();
 
 router.use(Auth);
 router.use('/admin', admin);
-router.use('/admin', News);
+router.use('/admin/news', News);
 
 export default router;
