@@ -1,12 +1,13 @@
 import { Router } from 'express';
 
 import ControllersRender from '../controllers/ControllersRender';
-import MiddlewaresAdmin from '../../auth/middlewares/is-auth';
+import SessionAuth from '../../../middleware/is-auth';
 
 const controllersRender = new ControllersRender();
 
 const router = Router();
 
-router.get('/', MiddlewaresAdmin, controllersRender.getIndex);
+router.use(SessionAuth);
+router.get('/', controllersRender.getIndex);
 
 export default router;
