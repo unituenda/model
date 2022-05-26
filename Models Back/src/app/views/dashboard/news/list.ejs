@@ -69,6 +69,7 @@
                   </tr>
                   </thead>
                   <tbody>
+                    <% for(new in news) { %>
                     <tr>
                       <td>1</td>
                       <td>Internet
@@ -78,10 +79,13 @@
                       <td>Controlers</td>
                       <td>02/02/2022</td>
                       <td>
-                        <a href=""><i class="fa fa-trash"></i></i></a>
-                        <a href=""><i class="fa fa-pen"></i></a>
+                        <div class="row">
+                          <a href="" class="col-sm-6 " style="border-right: 1px solid #ccc; display: flex; align-items: center; justify-content: center;"><i class="fa fa-trash" style="color: red;"></i></i></a>
+                          <a href="" class="col-sm-6"><i class="fa fa-pen" style="color: #3f6791; display: flex; align-items: center; justify-content: center;"></i></a>
+                        </div>
                      </td>
                     </tr>
+                    <% } %>
                   </tbody>
                   
                 </table>
