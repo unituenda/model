@@ -1,7 +1,7 @@
 
 class ControllersAuthRender {
   async getAddNews(request, response) {
-    return response.render('dashboard/addNews.ejs', {
+    return response.render('dashboard/news/addNews.ejs', {
       modeMenu: 'news/add'
     });
   }
