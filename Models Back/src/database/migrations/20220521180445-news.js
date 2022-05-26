@@ -32,8 +32,11 @@ module.exports = {
       views: {
         type: Sequelize.INTEGER,
         allowNull: true,
-      }
-      ,
+      },
+      category: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       created_at: {
         type: Sequelize.DATE,
         allowNull: false,

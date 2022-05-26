@@ -1,4 +1,5 @@
 
+
 class ControllersAuthRender {
   async getAddNews(request, response) {
     const error = request.flash('error');

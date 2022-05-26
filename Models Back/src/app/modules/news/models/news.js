@@ -9,6 +9,7 @@ class News extends Model {
         content: Sequelize.TEXT,
         photo_path: Sequelize.STRING,
         views: Sequelize.INTEGER,
+        category: Sequelize.STRING,
       },
       {
         sequelize,
