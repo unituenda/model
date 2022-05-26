@@ -6,9 +6,7 @@
   <title>Dashboard Hadja - Cadastrar noticia</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="/plugins/toastr/toastr.min.css">
   <link rel="stylesheet" href="/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <link rel="stylesheet" href="/plugins/summernote/summernote-bs4.min.css">
   <link rel="stylesheet" href="/dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -35,62 +33,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Cadastrar noticia</h1>
+            <h1 class="m-0">Noticias</h1>
           </div><!-- /.col -->
           <div class="row m-2">
           </div>
         </div><!-- /.row -->
-        <form action="/admin/news" method="post" enctype="multipart/form-data" >
-          <div class=" mr-2 ml-2 mt-4">
-            <div class="row "> 
-             <div class="col-sm-6">
-               <!-- text input -->
-               <div class="form-group">
-                 <label>Title</label>
-                 <input type="text" name="title" class="form-control" placeholder="Titlo da noticia">
-               </div>
-             </div>
-             <div class="col-sm-6">
-               <div class="form-group">
-                 <label>Categoria</label>
-                 <select class="form-control select2" name="category" style="width: 100%;">
-                   <option selected="selected">Intertimento</option>
-                   <option>Moda</option>
-                   <option>Eventos</option>
-                 </select>
-               </div>
-             </div>
-           </div>
-           <div class="row">
-            <div class="input-group col-sm-12">
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="exampleInputFile" name="file">
-                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-              </div>
-              <div class="input-group-append">
-                <span class="input-group-text">Upload</span>
-              </div>
-              
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="card-body">
-                <textarea id="summernote" name="content">
-                  <b>Hamilton Su</b>
-                </textarea>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-             <button type="submit" class="btn btn-block btn-dark btn-flat">Enviar</button>
-            </div>
-          
-          </div>
-          </div>
-         
-        </form>
+        
+
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
@@ -122,18 +71,8 @@
 
 <script src="/plugins/jquery/jquery.min.js"></script>
 <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/plugins/toastr/toastr.min.js"></script>
 <script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/plugins/summernote/summernote-bs4.min.js"></script>
-<script src="/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 <script src="/dist/js/adminlte.min.js"></script>
-<script>
-  $(function () {
-    $('#summernote').summernote()
-
-    bsCustomFileInput.init();
-  });
-  </script>
 
 <%- include('../components/error.ejs') %>
 </body>
