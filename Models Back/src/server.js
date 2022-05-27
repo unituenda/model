@@ -1,6 +1,7 @@
 import './database';
 import flash from 'connect-flash';
-import express, { urlencoded } from 'express';
+
+import express, { response, urlencoded } from 'express';
 import { join } from 'path';
 import cookieParser from 'cookie-parser';
 
@@ -33,6 +34,10 @@ app.use(router);
 //     message: 'Interno Error ',
 //   });
 // });
+
+app.use((request, response) => {
+  response.render('Error/404.ejs');
+});
 
 app.listen(3333, () => {
   console.log('Port on http://localhost:3333/')
