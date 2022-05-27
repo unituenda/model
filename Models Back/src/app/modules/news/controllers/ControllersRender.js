@@ -1,4 +1,4 @@
-import News from '../models/news';
+import ListNews from "../services/ServiceListNews";
 
 class ControllersAuthRender {
   getAddNews(request, response) {
@@ -11,9 +11,12 @@ class ControllersAuthRender {
   }
 
   async getListNews(request, response) {
-    const allNews = await News.findAll();
+    const listNews = new ListNews();
+    const allNews = await listNews.execute();
+ 
+    console.log(allNews);
     const error = request.flash('error');
-
+  
     return response.render('dashboard/news/list.ejs', {
       modeMenu: 'news/list',
       error,

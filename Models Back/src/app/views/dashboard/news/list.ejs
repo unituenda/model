@@ -69,13 +69,13 @@
                   </tr>
                   </thead>
                   <tbody>
-                    <% for(let list in allNews) { %>
+                    <% for(let list of allNews) { %>
                     <tr>
-                      <td><%-list.id%></td>
+                      <td><%- list.id %></td>
                       <td><%-list.title%>
                       </td>
                       <td><%-list.category%></td>
-                      <td><%-list.content%></td>
+                      <td class="text-center">...</td>
                       <td><%-list.createdAt%></td>
                       <td>
                         <div class="row">
