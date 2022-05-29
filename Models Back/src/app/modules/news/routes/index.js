@@ -16,5 +16,6 @@ router.get('/add', controllersRender.getAddNews);
 router.post('/add', upload.single('file'), controllerNews.store);
 
 router.get('/list', controllersRender.getListNews);
+router.get('/edit/:id', controllersRender.getEdit);
 
 export default router;
