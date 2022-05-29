@@ -31,7 +31,7 @@ class ControllersAuth {
       return response.redirect('/signin');
     }
 
-    request.session.data = { isLoggedIn : true, user_id : user.id };
+    request.session.data = { isLoggedIn : true, user_id : user.id, user_logger : user };
 
     request.flash('error', { type : 'success' , message : 'Logado com sucesso !'});
     return response.redirect('/admin');

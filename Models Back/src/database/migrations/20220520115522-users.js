@@ -21,6 +21,10 @@ module.exports = {
       password: {
         type: Sequelize.STRING,
         allowNull: false,
+      },
+      avatar: {
+        type: Sequelize.STRING,
+        allowNull: true,
       }
       ,
       nevil_session: {
