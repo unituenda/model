@@ -1,4 +1,5 @@
 import CreateNews from '../services/ServiceCreateNews';
+import UpdateNews from '../services/ServiceUpdateNews';
 
 class ControllersNews {
   async store(request, response){
@@ -15,7 +16,19 @@ class ControllersNews {
     });
 
     response.redirect('/admin/news/add');
+  }
 
+  async update(request, response) {
+    const { id, title, content, category } = request.body;
+    const news = new UpdateNews();
+    await news.execute({
+      id,
+      title,
+      content,
+      category
+    });
+
+    response.redirect('/admin/news/edit/' + id);
   }
 }
 
