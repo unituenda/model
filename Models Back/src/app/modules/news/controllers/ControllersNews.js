@@ -1,11 +1,12 @@
 import CreateNews from '../services/ServiceCreateNews';
+import DeleteNews from '../services/ServiceDeleteNews';
 import UpdateNews from '../services/ServiceUpdateNews';
 
 class ControllersNews {
   async store(request, response){
     const { filename: photo_path } = request.file;
     const {title, content, category} = request.body;
-    console.log(request.session.data.user_id, {title, content, category});
+   
     const createNews = new CreateNews();
     await createNews.execute({
       content,
@@ -20,6 +21,7 @@ class ControllersNews {
 
   async update(request, response) {
     const { id, title, content, category } = request.body;
+    request.flash('error', { type : 'success' , message : 'Actualizado com sucesso !'});
     const news = new UpdateNews();
     await news.execute({
       id,
@@ -29,6 +31,14 @@ class ControllersNews {
     });
 
     response.redirect('/admin/news/edit/' + id);
+  }
+  async delete(request, response) {
+    const { id } = request.params;
+    
+    const deleteNews = new DeleteNews();
+    await deleteNews.execute({ id });
+
+    return response.redirect('/admin/news/list' );
   }
 }
 
