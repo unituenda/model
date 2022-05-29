@@ -5,7 +5,7 @@ class UpdateNews{
     const news = News.findOne({
       where: { id }
     });
-    await news.update({ title, content, category});
+    (await news).update({ title, content, category});
     return news;
   }
 }
