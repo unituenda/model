@@ -7,7 +7,14 @@ class ControllersRender {
       modeMenu: 'dashboard'
     });
   }
- 
+  getUser(request, response) {
+    const error = request.flash('error');
+
+    return response.render('dashboard/users/profile.ejs', {
+      error,
+      modeMenu: 'dashboard'
+    });
+  }
 }
 
 export default ControllersRender;

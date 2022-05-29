@@ -9,5 +9,6 @@ const router = Router();
 
 router.use(SessionAuth);
 router.get('/', controllersRender.getIndex);
+router.get('/user', controllersRender.getUser);
 
 export default router;
