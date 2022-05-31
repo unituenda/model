@@ -59,8 +59,8 @@
          
         </li>
        
-        <li class="nav-item">
-          <a href="#" class="nav-link ">
+        <li class="nav-item <%- modeMenu.split('/')[0] == 'models' ? 'menu-open' : '' %>">
+          <a href="#" class="nav-link <%- modeMenu.split('/')[0] == 'models' ? 'active' : '' %>">
             <i class="nav-icon fas fa-users"></i>
             <p>
               Modelos
@@ -69,15 +69,24 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="pages/layout/top-nav.html" class="nav-link">
+              <a href="/admin/models/add" class="nav-link <%- modeMenu.split('/')[1] == 'add' ? 'active' : '' %>">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Homens</p>
+                <p>Adicionar</p>
               </a>
             </li>
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
               <a href="pages/layout/top-nav.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Homens</p>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/admin/models/f" class="nav-link <%- modeMenu.split('/')[1] == 'f' ? 'active' : '' %>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Mulheres</p>
               </a>

@@ -97,17 +97,24 @@
                  
                   <div class="tab-pane " id="upload">
                     <form class="form-horizontal">
-                      
                       <div class="form-group row">
-                        <label for="inputSkills" class="col-sm-2 col-form-label">Foto de perfil</label>
+                        <label for="inputName" class="col-sm-2 col-form-label">Foto de perfil  </label>
                         <div class="col-sm-10">
-                          <input type="file" class="form-control" id="inputSkills" placeholder="Skills">
+                          <div class="input-group col-sm-8">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="exampleInputFile" name="file">
+                              <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                            </div>
+                            <div class="input-group-append">
+                              <span class="input-group-text">Upload</span>
+                            </div>         
+                          </div>
                         </div>
                       </div>
-                     
+                      
                       <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
-                          <button type="submit" class="btn btn-danger">Submit</button>
+                          <button type="submit" class="btn btn-danger">Atualizar</button>
                         </div>
                       </div>
                     </form>
@@ -147,7 +154,7 @@
                      
                       <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
-                          <button type="submit" class="btn btn-danger">Submit</button>
+                          <button type="submit" class="btn btn-danger">Atualizar</button>
                         </div>
                       </div>
                     </form>
@@ -185,7 +192,12 @@
 <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <script src="/dist/js/adminlte.min.js"></script>
-
+<script src="/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<script>
+  $(function () {
+    bsCustomFileInput.init();
+  });
+  </script>
 <%- include('../components/error.ejs', { error }) %>
 </body>
 </html>
