@@ -31,7 +31,7 @@ module.exports = {
       },
       waist: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       hip: {
         type: Sequelize.STRING,
@@ -54,6 +54,10 @@ module.exports = {
         allowNull: false,
       },
       experience: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      photo: {
         type: Sequelize.STRING,
         allowNull: true,
       },
