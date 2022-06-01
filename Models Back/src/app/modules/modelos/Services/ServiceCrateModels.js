@@ -15,20 +15,6 @@ class CreateModels {
     experience,
     photo
   }){
-    console.log({ name,
-      age,
-      sexy,
-      height,
-      chest,
-      waist,
-      hip,
-      shoe,
-      eyes,
-      hair,
-      skin,
-      experience,
-      photo
-    });
     const mods = await Models.create({ name,
       age,
       sexy,

@@ -1,12 +1,18 @@
-
+import ListModels from "../Services/ServiceListModelos";
 class ControllersAuthRender {
 
   async getListMods(request, response) {
+    let listModels = new ListModels();
+
+    listModels = await listModels.execute({ sexy : 'F'}); 
+
+    console.log(listModels);
     const error = request.flash('error');
   
     return response.render('dashboard/mods/femeninos.ejs', {
       modeMenu: 'models/f',
-      error
+      error,
+      listModels
     });
   }
 
