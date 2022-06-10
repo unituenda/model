@@ -16,6 +16,20 @@ class ControllersAuthRender {
     });
   }
 
+  async getListMMods (request, response) {
+    let listModels = new ListModels();
+
+    listModels = await listModels.execute({ sexy : 'M'}); 
+
+    const error = request.flash('error');
+  
+    return response.render('dashboard/mods/masculino.ejs', {
+      modeMenu: 'models/m',
+      error,
+      listModels
+    });
+  }
+
   getAddMods(request, response) {
     const error = request.flash('error');
 

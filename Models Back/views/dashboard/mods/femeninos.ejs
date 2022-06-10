@@ -69,25 +69,25 @@
                     <th>Anca</th>
                     <th>Sapato</th>
                     <th>Olhos</th>
-                    <th>Cbelo</th>
+                    <th>Cabelo</th>
                     <th>Pele</th>
                     <th></th>
                   </tr>
                   </thead>
                   <tbody>
-                   
+                   <% for(let mode of listModels) { %>
                     <tr>
                       <th>ID</th>
-                      <th>Hamilton Silva</th>
-                      <th>22</th>
-                      <th>1.70</th>
+                      <th><%- mode.name %></th>
+                      <th><%- mode.age %></th>
+                      <th><%- mode.height %></th>
                       <th>20 Cm</th>
                       <th>30 Cm</th>
                       <th>20 Cm</th>
-                      <th>40</th>
+                      <th><%- mode.shoe %></th>
                       <th>Preto</th>
                       <th>Preto</th>
-                      <th>Negra</th>
+                      <th><%- mode.skin %></th>
                       
                       <td>
                         <div class="row">
@@ -96,7 +96,7 @@
                         </div>
                      </td>
                     </tr>
-                 
+                    <% } %>
                   </tbody>
                   
                 </table>
