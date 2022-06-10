@@ -7,7 +7,8 @@ class ControllersAuthRender {
 
     return response.render('dashboard/news/add.ejs', {
       modeMenu: 'news/add',
-      error
+      error,
+      user : request.session.data.user_logger
     });
   }
 
@@ -20,7 +21,8 @@ class ControllersAuthRender {
     return response.render('dashboard/news/list.ejs', {
       modeMenu: 'news/list',
       error,
-      allNews
+      allNews,
+      user : request.session.data.user_logger
     });
   }
 
@@ -34,7 +36,8 @@ class ControllersAuthRender {
     return response.render('dashboard/news/edit.ejs', {
       modeMenu: 'news/add',
       error,
-      news
+      news,
+      user : request.session.data.user_logger
     });
   }
   

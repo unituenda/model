@@ -12,7 +12,8 @@ class ControllersAuthRender {
     return response.render('dashboard/mods/femeninos.ejs', {
       modeMenu: 'models/f',
       error,
-      listModels
+      listModels,
+      user : request.session.data.user_logger
     });
   }
 
@@ -26,7 +27,8 @@ class ControllersAuthRender {
     return response.render('dashboard/mods/masculino.ejs', {
       modeMenu: 'models/m',
       error,
-      listModels
+      listModels,
+      user : request.session.data.user_logger
     });
   }
 
@@ -35,7 +37,8 @@ class ControllersAuthRender {
 
     return response.render('dashboard/mods/add.ejs', {
       modeMenu: 'models/add',
-      error
+      error,
+      user : request.session.data.user_logger
     });
   }
   

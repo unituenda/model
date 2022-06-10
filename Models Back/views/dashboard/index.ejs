@@ -23,11 +23,11 @@
   </div>
 
   <!-- Navbar -->
-  <%- include('./components/nav.ejs') %>
+  <%- include('./components/nav.ejs', user) %>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <%- include('./components/leaftsidebar.ejs', modeMenu) %>
+  <%- include('./components/leaftsidebar.ejs', modeMenu, user) %>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

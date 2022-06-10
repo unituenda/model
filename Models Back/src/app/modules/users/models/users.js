@@ -11,6 +11,7 @@ class User extends Model {
         password: Sequelize.STRING,
         nevil_session: Sequelize.INTEGER,
         password_hash: Sequelize.VIRTUAL,
+        avatar: Sequelize.STRING,
       },
       {
         sequelize,

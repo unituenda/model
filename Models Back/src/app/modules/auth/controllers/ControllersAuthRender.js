@@ -16,7 +16,7 @@ class ControllersAuthRender {
    const error = request.flash('error');
 
     return response.render('dashboard/login', {
-      error
+      error,
     });
   }
 }

@@ -15,6 +15,7 @@ app.use(session);
 app.set('view engine', 'ejs');
 app.set('views', join(__dirname, '..', 'views'));
 app.use(express.static(join(__dirname, '..', 'views', 'public')));
+app.use(express.static(join(__dirname, '..', 'tmp')));
 app.use(urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(session);
