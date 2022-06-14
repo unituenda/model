@@ -1,0 +1,456 @@
+{
+  "femenino": [
+    {
+      "id": 1,
+      "Nome": "Abraana Jacinto",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "19",
+      "Cintura": "19",
+      "Anca": "19",
+      "Sapato": "21",
+      "Olhos": "21",
+      "Cabelo": "21",
+      "Pele": "negra",
+      "Photo": "Abraana_Jacinto.jpg"
+    },
+    {
+      "id": 2,
+      "Nome": "Cael Pascoal",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "19",
+      "Cintura": "19",
+      "Anca": "19",
+      "Sapato": "21",
+      "Olhos": "21",
+      "Cabelo": "21",
+      "Pele": "negra",
+      "Photo": "Cael_Pascoal.jpg"
+    },
+    {
+      "id": 3,
+      "Nome": "Cecilia Sapalo",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "19",
+      "Cintura": "19",
+      "Anca": "19",
+      "Sapato": "21",
+      "Olhos": "21",
+      "Cabelo": "21",
+      "Pele": "negra",
+      "Photo": "Cecilia_Sapalo.jpg"
+    },
+    {
+      "id": 4,
+      "Nome": "Diana Mingas",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "19",
+      "Cintura": "19",
+      "Anca": "19",
+      "Sapato": "21",
+      "Olhos": "21",
+      "Cabelo": "21",
+      "Pele": "negra",
+      "Photo": "Diana Mingas.jpg"
+    },
+    {
+      "id": 5,
+      "Nome": "Emma Diogo",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "19",
+      "Cintura": "19",
+      "Anca": "19",
+      "Sapato": "21",
+      "Olhos": "21",
+      "Cabelo": "21",
+      "Pele": "negra",
+      "Photo": "Emma_Diogo.jpg"
+    },
+    {
+      "id": 6,
+      "Nome": "Fatoumata Diallo",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "19",
+      "Cintura": "19",
+      "Anca": "19",
+      "Sapato": "21",
+      "Olhos": "21",
+      "Cabelo": "21",
+      "Pele": "negra",
+      "Photo": "Fatoumata Diallo.jpg"
+    },
+    {
+      "id": 7,
+      "Nome": "Nadia Campos",
+      "Idade": "22",
+      "Altura": "1.78",
+      "Peito": "45",
+      "Cintura": "76",
+      "Anca": "97",
+      "Sapato": "40-41",
+      "Olhos": "Castanhos",
+      "Cabelo": "Preto",
+      "Pele": "negra",
+      "Photo": "Nadia_Campos.jpg"
+    },
+    {
+      "id": 8,
+      "Nome": "Sara Santos",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "19",
+      "Cintura": "19",
+      "Anca": "19",
+      "Sapato": "21",
+      "Olhos": "21",
+      "Cabelo": "21",
+      "Pele": "negra",
+      "Photo": "Sara Santos.JPG"
+    },
+    {
+      "id": 9,
+      "Nome": "Seomara Rocha",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "19",
+      "Cintura": "19",
+      "Anca": "19",
+      "Sapato": "21",
+      "Olhos": "21",
+      "Cabelo": "21",
+      "Pele": "negra",
+      "Photo": "Seomara_Rocha.jpg"
+    },
+    {
+      "id": 10,
+      "Nome": "Silvia Victória",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "19",
+      "Cintura": "19",
+      "Anca": "19",
+      "Sapato": "21",
+      "Olhos": "21",
+      "Cabelo": "21",
+      "Pele": "negra",
+      "Photo": "Silvia Victória.jpg"
+    }
+  ],
+  "masculino": [
+    {
+      "id": 1,
+      "Nome": "Hamilton e Wilson Andrade",
+      "Idade": "19",
+      "Altura": "1.85",
+      "Peito": "100",
+      "Cintura": "81",
+      "Anca": "19",
+      "Sapato": "43",
+      "Olhos": "Preto",
+      "Cabelo": "preto",
+      "Pele": "negra",
+      "Photo": "Andrade e Wilson.jpg"
+    },
+    {
+      "id": 2,
+      "Nome": "Ariclene Clemente",
+      "Idade": "19",
+      "Altura": "1.85",
+      "Peito": "100",
+      "Cintura": "80",
+      "Anca": "29",
+      "Sapato": "43",
+      "Olhos": "Castanhos escuros",
+      "Cabelo": "Preto",
+      "Pele": "negra",
+      "Photo": "Ariclene Clemente.jpg"
+    },
+    {
+      "id": 3,
+      "Nome": "Braulio Anderson",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "95",
+      "Cintura": "84",
+      "Anca": "19",
+      "Sapato": "44",
+      "Olhos": "Castanhos escuros",
+      "Cabelo": "Preto",
+      "Pele": "negra",
+      "Photo": "Braulio Anderson.jpg"
+    },
+    {
+      "id": 4,
+      "Nome": "Eryvaldo Reis",
+      "Idade": "27",
+      "Altura": "1.87",
+      "Peito": "104",
+      "Cintura": "88",
+      "Anca": "100",
+      "Sapato": "44",
+      "Olhos": "Castanhos",
+      "Cabelo": "Preto",
+      "Pele": "negra",
+      "Photo": "Eryvaldo Reis.jpg"
+    },
+    {
+      "id": 5,
+      "Nome": "Feliciano Pacheco",
+      "Idade": "19",
+      "Altura": "1.90",
+      "Peito": "108",
+      "Cintura": "92",
+      "Anca": "19",
+      "Sapato": "43",
+      "Olhos": "Castanhos",
+      "Cabelo": "Preto",
+      "Pele": "negra",
+      "Photo": "Feliciano Pacheco.JPG"
+    },
+    {
+      "id": 6,
+      "Nome": "Fernando João",
+      "Idade": "19",
+      "Altura": "1.85",
+      "Peito": "102",
+      "Cintura": "42",
+      "Anca": "19",
+      "Sapato": "43",
+      "Olhos": "Castanhos escuros",
+      "Cabelo": "Preto",
+      "Pele": "negra",
+      "Photo": "Fernando João.jpg"
+    },
+    {
+      "id": 7,
+      "Nome": "Hamilton Cunha",
+      "Idade": "19",
+      "Altura": "1.83",
+      "Peito": "104",
+      "Cintura": "77",
+      "Anca": "19",
+      "Sapato": "41",
+      "Olhos": "Castanhos",
+      "Cabelo": "Preto",
+      "Pele": "negra",
+      "Photo": "Hamilton Cunha 2018.jpg"
+    },
+    {
+      "id": 8,
+      "Nome": "Jelson Jorge",
+      "Idade": "19",
+      "Altura": "1.86",
+      "Peito": "112",
+      "Cintura": "82",
+      "Anca": "19",
+      "Sapato": "43",
+      "Olhos": "Castanhos",
+      "Cabelo": "Preto",
+      "Pele": "negra",
+      "Photo": "Jelson Jorge.jpg"
+    },
+    {
+      "id": 9,
+      "Nome": "José Arnaldo",
+      "Idade": "19",
+      "Altura": "1.94",
+      "Peito": "112",
+      "Cintura": "84",
+      "Anca": "100",
+      "Sapato": "43",
+      "Olhos": "Castanhos",
+      "Cabelo": "Preto",
+      "Pele": "negra",
+      "Photo": "José Arnaldo.jpg"
+    }
+    
+  ]
+  ,
+  "post": [
+    {
+      "id": 1,
+      "Title": "Hadja models",
+      "data": "19/05/2022",
+      "escritor": "Elizabete",
+      "categoria": "Moda",
+      "descricao": "Suspendisse euismod eu justo eget cursus. Proin pharetra varius metus. Nam rhoncus euismod eros the fringilla volutpat convallis at. Nam rhoncus euismod eros. Integer fringilla varius leo, eget volutpat eros convalist. Nulla non nisl orci. Donec ornare ullamcorper nunc elementum placerat. Curabitur massa ante, iaculis a enim porta, iaculis. Quisque gravida eros ut turpis interdum ornare. Interdum et malesu they adamale fames ac ante ipsum primis in faucibus. Curabitur arcu erosite feugiat in tortor in, volutpat sollicitudin libero. Maecenas nisl est, conselur rhoncus loremir consequat et, finibus nec purus.",
+      "Photo": "Andrade e Wilson.jpg"
+    },
+    {
+      "id": 2,
+      "Title": "Agencia",
+      "data": "02/05/2022",
+      "escritor": "Paulo",
+      "categoria": "Entretenimento",
+      "descricao": "Suspendisse euismod eu justo eget cursus. Proin pharetra varius metus. Nam rhoncus euismod eros the fringilla volutpat convallis at. Nam rhoncus euismod eros. Integer fringilla varius leo, eget volutpat eros convalist. Nulla non nisl orci. Donec ornare ullamcorper nunc elementum placerat. Curabitur massa ante, iaculis a enim porta, iaculis. Quisque gravida eros ut turpis interdum ornare. Interdum et malesu they adamale fames ac ante ipsum primis in faucibus. Curabitur arcu erosite feugiat in tortor in, volutpat sollicitudin libero. Maecenas nisl est, conselur rhoncus loremir consequat et, finibus nec purus.",
+      "Photo": "Ariclene Clemente.jpg"
+    },
+    {
+      "id": 3,
+      "Title": "Unituenda lda",
+      "data": "19/05/2022",
+      "escritor": "Saulo",
+      "categoria": "Moda",
+      "descricao": "Suspendisse euismod eu justo eget cursus. Proin pharetra varius metus. Nam rhoncus euismod eros the fringilla volutpat convallis at. Nam rhoncus euismod eros. Integer fringilla varius leo, eget volutpat eros convalist. Nulla non nisl orci. Donec ornare ullamcorper nunc elementum placerat. Curabitur massa ante, iaculis a enim porta, iaculis. Quisque gravida eros ut turpis interdum ornare. Interdum et malesu they adamale fames ac ante ipsum primis in faucibus. Curabitur arcu erosite feugiat in tortor in, volutpat sollicitudin libero. Maecenas nisl est, conselur rhoncus loremir consequat et, finibus nec purus.",
+      "Photo": "Braulio Anderson.jpg"
+    },
+    {
+      "id": 4,
+      "Title": "O que é",
+      "data": "19",
+      "escritor": "1.85",
+      "categoria": "Entretenimento",
+      "descricao": "Suspendisse euismod eu justo eget cursus. Proin pharetra varius metus. Nam rhoncus euismod eros the fringilla volutpat convallis at. Nam rhoncus euismod eros. Integer fringilla varius leo, eget volutpat eros convalist. Nulla non nisl orci. Donec ornare ullamcorper nunc elementum placerat. Curabitur massa ante, iaculis a enim porta, iaculis. Quisque gravida eros ut turpis interdum ornare. Interdum et malesu they adamale fames ac ante ipsum primis in faucibus. Curabitur arcu erosite feugiat in tortor in, volutpat sollicitudin libero. Maecenas nisl est, conselur rhoncus loremir consequat et, finibus nec purus.",
+      "Photo": "Eryvaldo Reis.jpg"
+    },
+    {
+      "id": 5,
+      "Title": "casting",
+      "data": "19/05/2022",
+      "escritor": "Manuel",
+      "categoria": "Moda",
+      "descricao": "Suspendisse euismod eu justo eget cursus. Proin pharetra varius metus. Nam rhoncus euismod eros the fringilla volutpat convallis at. Nam rhoncus euismod eros. Integer fringilla varius leo, eget volutpat eros convalist. Nulla non nisl orci. Donec ornare ullamcorper nunc elementum placerat. Curabitur massa ante, iaculis a enim porta, iaculis. Quisque gravida eros ut turpis interdum ornare. Interdum et malesu they adamale fames ac ante ipsum primis in faucibus. Curabitur arcu erosite feugiat in tortor in, volutpat sollicitudin libero. Maecenas nisl est, conselur rhoncus loremir consequat et, finibus nec purus.",
+      "Photo": "Feliciano Pacheco.JPG"
+    },
+    {
+      "id": 6,
+      "Title": "Aniversário",
+      "data": "19/05/2022",
+      "escritor": "Joaquim",
+      "categoria": "Entretenimento",
+      "descricao": "Suspendisse euismod eu justo eget cursus. Proin pharetra varius metus. Nam rhoncus euismod eros the fringilla volutpat convallis at. Nam rhoncus euismod eros. Integer fringilla varius leo, eget volutpat eros convalist. Nulla non nisl orci. Donec ornare ullamcorper nunc elementum placerat. Curabitur massa ante, iaculis a enim porta, iaculis. Quisque gravida eros ut turpis interdum ornare. Interdum et malesu they adamale fames ac ante ipsum primis in faucibus. Curabitur arcu erosite feugiat in tortor in, volutpat sollicitudin libero. Maecenas nisl est, conselur rhoncus loremir consequat et, finibus nec purus.",
+      "Photo": "Fernando João.jpg"
+    }
+    
+  ]
+  ,
+  "categoriaAltura": [
+    {
+      "id": 1,
+      "categoria": "1.85"
+    },
+    {
+      "id": 2,
+      "categoria": "1.86"
+    },
+    {
+      "id": 3,
+      "categoria": "1.87"
+    },
+    {
+      "id": 4,
+      "categoria": "1.88"
+    },
+    {
+      "id": 5,
+      "categoria": "1.89"
+    },
+    {
+      "id": 6,
+      "categoria": "1.90"
+    }
+  ]
+  ,
+  "categoriaCintura": [
+    {
+      "id": 1,
+      "categoria": "80"
+    },
+    {
+      "id": 2,
+      "categoria": "81"
+    },
+    {
+      "id": 3,
+      "categoria": "82"
+    },
+    {
+      "id": 4,
+      "categoria": "83"
+    },
+    {
+      "id": 5,
+      "categoria": "84"
+    },
+    {
+      "id": 6,
+      "categoria": "86"
+    },
+    {
+      "id": 7,
+      "categoria": "87"
+    },
+    {
+      "id": 8,
+      "categoria": "88"
+    }
+    ,
+    {
+      "id": 9,
+      "categoria": "89"
+    }
+    ,
+    {
+      "id": 10,
+      "categoria": "90"
+    }
+    ,
+    {
+      "id": 11,
+      "categoria": "91"
+    }
+    ,
+    {
+      "id": 12,
+      "categoria": "92"
+    }
+  ]
+  ,
+  "categoriaOlhos": [
+    {
+      "id": 1,
+      "categoria": "Preto"
+    },
+    {
+      "id": 2,
+      "categoria": "Castanhos"
+    },
+    {
+      "id": 3,
+      "categoria": "Castanhos escuro"
+    },
+    {
+      "id": 4,
+      "categoria": "Azuis"
+    },
+    {
+      "id": 5,
+      "categoria": "Verdes"
+    }
+  ]
+  ,
+  "categoriaPele": [{
+      "id": 1,
+      "categoria": "Negra"
+    },
+    {
+      "id": 2,
+      "categoria": "Branca"
+    }
+  ]
+  ,
+  "categoriaBlog": [{
+      "id": 1,
+      "categoria": "Moda"
+    },
+    {
+      "id": 2,
+      "categoria": "Entretenimento"
+    }
+  ]
+}
