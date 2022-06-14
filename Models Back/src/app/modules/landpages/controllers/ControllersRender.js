@@ -16,6 +16,13 @@ class ControllersRender {
       path: 'about'
     })
   }
+
+  async getService(request, response) {
+    return response.render('page/services.ejs', {
+      path: 'service'
+    })
+  }
+  
 }
 
 export default ControllersRender;
