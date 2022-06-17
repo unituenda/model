@@ -11,17 +11,17 @@
     <meta name="robots" content="index, noarchive">
   <meta name="keywords" content="models, modelo, agencia, Representação e Gestão de carreiras, Consultoria de Comunicação, Assessoria de Imprensa, Gestão de Media Social Produção de Eventos">
     <title>Hadja models</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/themify-icons.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/css/themify-icons.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/fontawesome-free/css/all.min.css" />
+    <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -33,17 +33,17 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 animate-box fadeInUp animated vk yscott-content-home"
                         data-animate-effect="fadeInUp">
-                        <img src="img/banner.jpg" alt="banner inscrição">
+                        <img src="/<%- post.photo_path%>" alt="<%- post.title%>">
                     </div>
                     <div class="col-md-12 col-sm-12">
                         <div class="yscott-caption animate-box fadeInUp animated" data-animate-effect="fadeInUp">
-                            <h2>Hadja models</h2>
+                            <h2><%- post.title%></h2>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p><i class="far fa-eye"></i> 100</p>
+                                    <p><i class="far fa-eye"></i> <%- post.views || 0%></p>
                                 </div>
                                 <div class="col-md-6">
-                                    <p></i>Por: Paula Cunha</p>
+                                    <p></i>Por: <%- post.User.name %></p>
                                 </div>
                             </div>
                         </div>
@@ -135,14 +135,14 @@
         </footer>
     </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/modernizr-2.6.2.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.magnific-popup.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

@@ -21,4 +21,6 @@ router.get('/casting', controllersRender.getCasting);
 router.get('/blog', controllersRender.getBlog);
 router.get('/contact', controllersRender.getContact);
 router.get('/news', controllersNews.index);
+router.get('/post/:id', controllersRender.getPost);
+
 export default router;

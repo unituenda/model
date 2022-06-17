@@ -1,4 +1,5 @@
 
+import SinglePost from '../../news/services/ServiceSingleNews';
 class ControllersRender {
 
   async getWelcome(request, response) {
@@ -79,6 +80,18 @@ class ControllersRender {
       path: 'contact'
     })
   } 
+
+  async getPost(request, response) {
+    const { id } = request.params;
+    const singlePost = new SinglePost();
+
+    let post = await singlePost.execute({ id });
+
+    return response.render('page/post.ejs', {
+      path: 'blog',
+      post,
+    })
+  }
 }
 
 
