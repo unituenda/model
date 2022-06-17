@@ -7,7 +7,6 @@ class ListNews {
   async execute(){
     let allNews = await News.findAll();
 
-    console.log(allNews);
     allNews = allNews.map(item => (
         {
           id : item.id,
@@ -21,7 +20,6 @@ class ListNews {
           )
         }
     ));
-    console.log(allNews)
 
     return allNews;
   }

@@ -1,11 +1,11 @@
 import { Router } from 'express';
 import ControllersRender from '../controllers/ControllersRender';
+import ControllersNews from '../../news/controllers/ControllersNews';
 
 const router = Router();
 
-
 const controllersRender = new ControllersRender();
-
+const controllersNews = new ControllersNews();
 
 router.get('/welcome', controllersRender.getWelcome);
 router.get('/', controllersRender.getIndex);
@@ -20,4 +20,5 @@ router.get('/mister', controllersRender.getMister);
 router.get('/casting', controllersRender.getCasting);
 router.get('/blog', controllersRender.getBlog);
 router.get('/contact', controllersRender.getContact);
+router.get('/news', controllersNews.index);
 export default router;

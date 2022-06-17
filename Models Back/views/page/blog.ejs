@@ -202,41 +202,25 @@
   <script src="/js/axios.js"></script>
   <script>
     const api = axios.create({
-      baseUrl: 'http://localhost:3000',
+      baseUrl: 'http://localhost:3333',
     });
 
     const postsContainer = document.getElementById('postBlog');
     const loading = document.querySelector('.loader');
     const filter = document.getElementById('filterPost');
-    // const categoria = document.getElementById('categoriaBlog');
-    // const cat = document.getElementById('categBlog');
-
     let limit = 3;
     let page = 1;
 
     // Fetch posts from API
     async function getPosts() {
       const res = await fetch(
-        `http://localhost:3000/post?_limit=${limit}&_page=${page}`
+        `http://localhost:3333/news?limit=${limit}&page=${page}`
       );
 
       const data = await res.json();
 
       return data;
     }
-
-    // Fetch posts from API
-    // async function getCategoria() {
-    //   const res = await fetch(
-    //     `http://localhost:3000/categoriaBlog`
-    //   );
-
-    //   const data = await res.json();
-
-    //   return data;
-    // }
-
-    // Show posts in DOM
     async function showPosts() {
       const posts = await getPosts();
 
@@ -253,35 +237,21 @@
         postEl.innerHTML = `
         <div class="col-md-12 col-sm-12 animate-box fadeInUp animated vk yscott-content-home1"
                         data-animate-effect="fadeInUp">
-                        <img src="img/cover.jpg" alt="${post.Title}">
+                        <img src="/${post.photo_path}" alt="${post.title}">
                     </div>
               <div class="yscott-blog-bottom-content">
                 <div class="yscott-blog-title">
-                  <h2><a href="post.html" class="titleB">${post.Title}</a></h2>
-                  <p class="yscott-author-date"> <span class="fas fa-time"></span> ${post.data} <span class="fas fa-user"></span>
-                    ${post.escritor} </p>
+                  <h2><a href="post.html" class="titleB">${post.title}</a></h2>
+                  <p class="yscott-author-date"> <span class="fas fa-time"></span>${post.data || 'Agora'} <span class="fas fa-time"></span>${post.views || '0'} <span class="fas fa-user"></span>
+                    ${post.User.name} </p>
                 </div>
-                <p>${post.descricao}</p>
+               
                 <a class="yscott-blog-more" href="post.html"><button class="yscott-button1">Ler mais</button></a>
               </div>
     `;
         postsContainer.appendChild(postEl);
       });
     }
-
-    // Show posts in DOM
-    // async function optionAltura() {
-    //   const posts = await getCategoria();
-
-    //   posts.forEach(post => {
-    //     const option = document.createElement('li');
-    //     option.value = post.categoria;
-    //     option.appendChild(document.createTextNode(post.categoria))
-    //     cat.appendChild(option);
-    //   })
-    // }
-
-    // Show loader & fetch more posts
     function showLoading() {
       loading.classList.add('show');
 
