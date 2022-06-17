@@ -22,6 +22,12 @@ class ControllersRender {
       path: 'service'
     })
   }
+
+  async getFemale(request, response) {
+    return response.render('page/female.ejs', {
+      path: 'modelos'
+    })
+  }
   
 }
 

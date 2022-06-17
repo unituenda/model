@@ -11,6 +11,6 @@ router.get('/welcome', controllersRender.getWelcome);
 router.get('/', controllersRender.getIndex);
 router.get('/about', controllersRender.getAbout);
 router.get('/service', controllersRender.getService);
-
+router.get('/female', controllersRender.getFemale)
 
 export default router;
