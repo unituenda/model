@@ -1,0 +1,5 @@
+.yscott-description-section img, .yscott-description-section video {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: auto !important;
+}

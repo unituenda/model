@@ -217,6 +217,7 @@
         `http://localhost:3333/news?limit=${limit}&page=${page}`
       );
 
+      page += 1;
       const data = await res.json();
 
       return data;

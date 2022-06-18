@@ -1,5 +1,6 @@
 
 import SinglePost from '../../news/services/ServiceSingleNews';
+import UpdateNews from '../../news/services/ServiceUpdateNews';
 class ControllersRender {
 
   async getWelcome(request, response) {
@@ -84,9 +85,12 @@ class ControllersRender {
   async getPost(request, response) {
     const { id } = request.params;
     const singlePost = new SinglePost();
+    const updatePost = new UpdateNews();
 
+   
     let post = await singlePost.execute({ id });
-
+    await updatePost.execute({ id : post.id, views : (post.views || 0) + 1 });
+    post.views = (post.views || 0) + 1;
     return response.render('page/post.ejs', {
       path: 'blog',
       post,
