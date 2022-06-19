@@ -1,6 +1,7 @@
 
 import SinglePost from '../../news/services/ServiceSingleNews';
 import UpdateNews from '../../news/services/ServiceUpdateNews';
+import SingleModels from '../../modelos/Services/ServiceSingleModels';
 class ControllersRender {
 
   async getWelcome(request, response) {
@@ -38,6 +39,19 @@ class ControllersRender {
     return response.render('page/female.ejs', {
       path: 'modelos'
     })
+  }
+
+  async getProfile(request, response) {
+    const { id } = request.params;
+
+    const singleModels = new SingleModels();
+
+    let single = await singleModels.execute({ id });
+
+    return response.render('page/profile.ejs', {
+      path: 'modelos',
+      single
+    });
   }
 
   async getInscription(request, response) {

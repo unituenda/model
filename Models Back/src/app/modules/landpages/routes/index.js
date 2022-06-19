@@ -25,5 +25,6 @@ router.get('/contact', controllersRender.getContact);
 router.get('/news', controllersNews.index);
 router.get('/post/:id', controllersRender.getPost);
 router.get('/models', controllerModels.index);
+router.get('/profile/:id', controllersRender.getProfile);
 
 export default router;

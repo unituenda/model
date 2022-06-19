@@ -6,20 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, noarchive">
-  <meta name="keywords" content="models, modelo, agencia, Representação e Gestão de carreiras, Consultoria de Comunicação, Assessoria de Imprensa, Gestão de Media Social Produção de Eventos">
+  <meta name="keywords" content="Modelo <%- single.name %>, <%- single.name %>, models, modelo, agencia, Representação e Gestão de carreiras, Consultoria de Comunicação, Assessoria de Imprensa, Gestão de Media Social Produção de Eventos">
+  <meta name="description" content="<%- single.name %>">
   <title>Perfil</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="/css/magnific-popup.css">
+  <link rel="stylesheet" href="/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
-  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
 
 </head>
 
@@ -38,50 +39,22 @@
               <div class="model border-rad-5">
                 <div class="model-images">
                   <div>
-                    <!-- <a href="">
-                      <img src="img/banner.jpg" alt="img">
-                    </a> -->
-                    <!-- Carousel Slider -->
                     <div id="carouselYscottIndicators" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <% let a = 0; for(photo of single.photo.split(',')) {  %>
+                        <div class="carousel-item <%- a == 0 ? 'active' : '' %>">
                           <div class="yscott-content-home">
 
-                            <a href="img/femiaModel/Nadia_Campos.jpg" title="Nadia_Campos" class="img-zoom">
+                            <a href="/<%-photo%>" title="<%- single.name %>" class="img-zoom">
                               <div class="gallery-box">
                                 <img class="img yscott-img-home-left animate-box fadeInLeft animated "
-                                  data-animate-effect="fadeInLeft" src="img/femiaModel/Nadia_Campos.jpg" alt="imagem de perfil ">
+                                  data-animate-effect="fadeInLeft" src="/<%-photo%>" alt="imagem de perfil ">
                                 <div class="gallery-detail text-center"> <i class="fas fa-plus"></i> </div>
                               </div>
                             </a>
                           </div>
                         </div>
-                        <div class="carousel-item ">
-                          <div class="yscott-content-home">
-
-                            <a href="img/femiaModel/nadiacampos1.jpg" title="Nadia_Campos" class="img-zoom">
-                              <div class="gallery-box">
-                                <img class="img yscott-img-home-left animate-box fadeInLeft animated"
-                                  data-animate-effect="fadeInLeft" src="img/femiaModel/nadiacampos1.jpg" alt="imagem da modelo">
-                                <div class="gallery-detail text-center"> <i class="fas fa-plus"></i> </div>
-                              </div>
-                            </a>
-
-                          </div>
-                        </div>
-                        <div class="carousel-item ">
-                          <div class="yscott-content-home">
-
-                            <a href="img/femiaModel/nadiacampos2.jpg" title="Nadia_Campos" class="img-zoom">
-                              <div class="gallery-box">
-                                <img class="img yscott-img-home-left animate-box fadeInLeft animated"
-                                  data-animate-effect="fadeInLeft" src="img/femiaModel/nadiacampos2.jpg" alt="imagem da modelo">
-                                <div class="gallery-detail text-center"> <i class="fas fa-plus"></i> </div>
-                              </div>
-                            </a>
-
-                          </div>
-                        </div>
+                        <% a += 1; } %>
                         <a class="carousel-control-prev" href="#carouselYscottIndicators" role="button"
                           data-slide="prev"> <span class="fas fa-angle-left" aria-hidden="true"></span> <span
                             class="sr-only">Anterior</span>
@@ -99,36 +72,36 @@
                   <ul class="model-data">
                     <li>
                       <span class="title ">Idade</span>
-                      <span class="data">22</span>
+                      <span class="data"><%- single.age %> anos</span>
                     </li>
                     <li>
                       <span class="title">Altura</span>
-                      <span class="data">1.78cm</span>
+                      <span class="data"><%- single.height %> m</span>
                     </li>
                     <li>
                       <span class="title">Peito</span>
-                      <span class="data">45cm</span>
+                      <span class="data"><%- single.chest %></span>
                     </li>
                     <li>
                       <span class="title">Cintura</span>
-                      <span class="data">76cm</span>
+                      <span class="data"><%- single.waist %></span>
                     </li>
                     <li>
                       <span class="title">Anca</span>
-                      <span class="data">97cm</span>
+                      <span class="data"><%- single.hip %></span>
                     </li>
                     
                     <li>
                       <span class="title">Sapatos</span>
-                      <span class="data">40-41</span>
+                      <span class="data"><%- single.shoe %></span>
                     </li>
                     <li>
                       <span class="title">Olhos </span>
-                      <span class="data">Castanhos</span>
+                      <span class="data"><%- single.eyes %></span>
                     </li>
                     <li>
                       <span class="title">Cabelo</span>
-                      <span class="data">Preto</span>
+                      <span class="data"><%- single.hair %></span>
                     </li>
                   </ul>
                 </div>
@@ -141,7 +114,7 @@
           </div>
 
           <div class="col-xs-12 col-lg-6 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
-            <h2 class="entry-title">Nádia Campos</h2>
+            <h2 class="entry-title"><%- single.name %></h2>
             <div class="fw-divider-space hidden-below-lg mt--10"></div>
             <!-- <p class="text text-white animate-box fadeInRight animated" data-animate-effect="fadeInRight">
               A história da Hadja Models começa, quando o seu fundador
@@ -299,14 +272,14 @@
     </footer>
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/modernizr-2.6.2.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/modernizr-2.6.2.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/jquery.magnific-popup.js"></script>
+  <script src="/js/masonry.pkgd.min.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
