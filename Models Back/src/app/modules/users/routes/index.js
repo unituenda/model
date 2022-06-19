@@ -14,6 +14,6 @@ const router = Router();
 router.use(SessionAuth);
 router.get('/', controllersRender.getIndex);
 router.get('/user', controllersRender.getUser);
-router.post('/avatar', upload.single('file'), controllersUser.updateAvatar);
+router.post('/avatar', upload.single('file'), controllersUser.update);
 
 export default router;

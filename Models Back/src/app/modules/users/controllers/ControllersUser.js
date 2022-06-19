@@ -1,9 +1,11 @@
 import UpdateUsers from "../services/UpdateUserServices";
 class ControllersUser {
-  async updateAvatar(request, response) {
+  async update(request, response) {
     const file = request.file;
     try {
       const avatar = file.filename;
+      const { name, email } = request.body;
+      
       const user = new UpdateUsers();
       let id = request.session.data.user_id;
       
