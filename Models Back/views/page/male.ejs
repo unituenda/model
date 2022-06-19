@@ -146,7 +146,7 @@
   <script src="/js/axios.js"></script>
   <script>
     const api = axios.create({
-      baseUrl: 'http://localhost:3000',
+      baseUrl: 'http://localhost:3333/',
     });
 
     const postsContainer = document.getElementById('postMentor');
@@ -159,15 +159,15 @@
     const Pele = document.getElementById('Pele');
     
 
-    let limit = 5;
+    let limit = 3;
     let page = 1;
 
     // Fetch posts from API
     async function getPosts() {
       const res = await fetch(
-        `http://localhost:3000/masculino?_limit=${limit}&_page=${page}`
+        `http://localhost:3333/models?limit=${limit}&page=${page}&sexy=M`
       );
-
+      
       const data = await res.json();
 
       return data;
@@ -229,25 +229,25 @@
         // postEl.dataset()
         postEl.innerHTML = `
             <div class="item kl">
-              <a href="profile.html">
-              <div class="position-re o-hidden"> <img src="img/Modelos masculinos para site/${post.Photo}" alt="${post.Nome}"> </div>
+              <a href="/profile/${post.id}">
+                <div class="position-re o-hidden"> <img src="/${post.photo.split(',')[0]}" alt="${post.name}"> </div>
               <div class="layer">
                 <div class="layer-text">
-                  <h3>Idade: ${post.Idade}</h3>
-                  <h3 class="altura">Altura: ${post.Altura}</h3>
-                  <h3>Peito: ${post.Peito}</h3>
-                  <h3 class="Cintura">Cintura: ${post.Cintura}</h3>
-                  <h3>Anca: ${post.Anca}</h3>
-                  <h3>Sapatos: ${post.Sapato}</h3>
-                  <h3 class="Olhos">Olhos: ${post.Olhos}</h3>
-                  <h3>Cabelo: ${post.Cabelo}</h3>
-                  <h3 class="Pele">Pele: ${post.Pele}</h3>
+                  <h3>Idade: ${post.age}</h3>
+                  <h3 class="altura">Altura: ${post.height}</h3>
+                  <h3>Peito: ${post.chest}</h3>
+                  <h3 class="Cintura">Cintura: ${post.waist}</h3>
+                  <h3>Anca: ${post.hip}</h3>
+                  <h3>Sapatos: ${post.shoe}</h3>
+                  <h3 class="Olhos">Olhos: ${post.eyes}</h3>
+                  <h3>Cabelo: ${post.hair}</h3>
+                  <h3 class="Pele">Pele: ${post.skin}</h3>
                 </div>
               </div>
               </a>
               <div class="con">
-                <a href="profile.html">
-                  <h5 class="nome-modelo">${post.Nome}</h5>
+                <a href="/profile/${post.id}">
+                  <h5 class="nome-modelo">${post.name}</h5>
                 </a>
               </div>
             </div>

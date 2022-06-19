@@ -22,10 +22,10 @@ class ControllerModels {
     
   }
   async index(request, response){
-    const { page, limit } = request.query;
+    const { page, limit, sexy } = request.query;
     let indexMods = new IndexMods();
 
-    indexMods = await indexMods.execute({ page, limit, sexy : 'F' })    
+    indexMods = await indexMods.execute({ page, limit, sexy })    
      
      return response.json(indexMods);
   }

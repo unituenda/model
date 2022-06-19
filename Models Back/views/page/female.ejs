@@ -165,9 +165,9 @@
     // Fetch posts from API
     async function getPosts() {
       const res = await fetch(
-        `http://localhost:3333/models?limit=${limit}&page=${page}`
+        `http://localhost:3333/models?limit=${limit}&page=${page}&sexy=F`
       );
-      page += 1;
+      
       const data = await res.json();
 
       return data;
