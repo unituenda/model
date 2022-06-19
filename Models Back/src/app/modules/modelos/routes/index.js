@@ -13,7 +13,7 @@ const controllersModels = new ControllersModels();
 
 router.get('/f', controllersRender.getListMods);
 router.get('/m', controllersRender.getListMMods);
-router.get('/add', controllersRender.getAddMods)
+router.get('/add', controllersRender.getAddMods);
 
 router.post('/add', upload.array('file', 12), controllersModels.store);
 
